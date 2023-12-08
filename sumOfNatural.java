@@ -9,7 +9,8 @@ public class sumOfNatural {
 
         int n = sc.nextInt();
         
-        calculateSum(1, n, 0);
+      //  calculateSum(1, n, 0);
+      System.out.println("sum is "+calculateSum2(n));
         sc.close();
     }
 
@@ -22,5 +23,12 @@ public class sumOfNatural {
     sum += i;
     calculateSum(i+1, n, sum);
     System.out.println(i);
+   }
+
+   private static int calculateSum2(int n){
+    if (n <= 0) {
+        return 0;
+    }
+    return n + calculateSum2(n-1);
    }
 }
