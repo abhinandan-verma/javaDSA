@@ -21,5 +21,6 @@ public class sumOfNatural {
     }
     sum += i;
     calculateSum(i+1, n, sum);
+    System.out.println(i);
    }
 }
