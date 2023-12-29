@@ -1,4 +1,8 @@
+package Stack;
+
 import java.util.Scanner;
+
+import static java.lang.StringTemplate.STR;
 
 public class stackArray {
 
@@ -50,7 +54,7 @@ public class stackArray {
                     push(item);
                     break;
                 case 2 :
-                    System.out.println(STR."\{pop()} popped successfully");
+          //          System.out.println(STR."\{pop()} popped successfully");
                     break;
                 case 3 : displayStack();
                     break;
